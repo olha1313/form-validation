@@ -21,6 +21,9 @@ function checkInputs() {
         // show error
         // add error class
         setErrorFor(username, 'Username cannot be blank');
+    } else if (userNameValue.length < 3) {
+        // add error class
+        setErrorFor(username, 'Username must be at least 3 characters');
     } else {
         // add success class
         setSuccessFor(username);
@@ -48,6 +51,14 @@ function checkInputs() {
         setErrorFor(password_check, 'Passwords does not match')
     } else {
         setSuccessFor(password_check);
+    }
+
+    if (userNameValue.length >= 3 && isEmail(emailValue) && passwordValue.length >= 6 && passwordCheckValue === passwordValue) {
+        swal({
+            title: "Good job!",
+            text: "Account created!",
+            icon: "success",
+        });
     }
 }
 
