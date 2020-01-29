@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #9b59b6;
+  background-color: #ac8daf;
   font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
@@ -96,8 +96,8 @@ body {
       }
 
       button {
-        background-color: #8e44ad;
-        border: 2px solid #8e44ad;
+        background-color: #ac8daf;
+        border: 2px solid #ac8daf;
         border-radius: 4px;
         color: #fff;
         display: block;
@@ -105,6 +105,10 @@ body {
         font-size: 16px;
         padding: 10px;
         width: 100%;
+        &:hover {
+          cursor: pointer;
+          background-color: #9a7c9d;
+        }
       }
     }
   }

@@ -40,10 +40,11 @@ function checkInputs() {
     if (passwordValue === '') {
         setErrorFor(password, 'Password cannot be blank');
     } else if (passwordValue.length < 6) {
-        setErrorFor(password, 'Email must be at least 6 characters')
+        setErrorFor(password, 'Password must be at least 6 characters')
     } else {
         setSuccessFor(password);
     }
+
 
     if (passwordCheckValue === '') {
         setErrorFor(password_check, 'Password cannot be blank');
